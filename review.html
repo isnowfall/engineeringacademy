@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+  <title>Review</title>
+  <link rel="stylesheet" href="mystyle.css">
+<style type="text/css">
+  body {
+    padding-left: 11em;
+   font-family: Georgia, "Times New Roman",
+          Times, serif;
+    color: white;
+    background-color: black }
+  ul.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    width: 9em }
+  h1 {
+    font-family: Helvetica, Geneva, Arial,
+          SunSans-Regular, sans-serif }
+  ul.navbar li {
+    background: white;
+    margin: 0.5em 0;
+    padding: 0.3em;
+    border-right: 1em solid black }
+  ul.navbar a {
+    text-decoration: none }
+  a:link {
+    color: blue }
+  a:visited {
+    color: purple }
+  address {
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: thin dotted }
+  </style>
+</head>
+
+<body>
+
+<!-- Site navigation menu -->
+<ul class="navbar">
+  <li><a href="index.html">Home page</a>
+  <li><a href="journal.html">Blog</a>
+  <li><a href="team.html">Team</a>
+  <li><a href="review.html">Review</a>
+    <li><a href="research.html">Research</a>
+</ul>
+
+<!-- Main content -->
+<h1>EA Project </h1>
+
+<p>Welcome to Review!
+
+<p>Here is where our team review what happens and what went wrong and what went right!
+<p> Bridge building activity (Ice breaker)
+<p> What went right: we did research from the start and found a design to build, many triangles bridge
+<p> What went wrong: We underestimated the weight of the item and made the bridge weaker than it should behind
+<p> Conclusion: We ended up around middle of the teams
+<p> <img src="brokenstick.jpeg" width="300" /> here was where the ice cream stick fractured
+<p> What could have went better: We could have added more sideway ice cream sticks at the base to make it harder to fracture
+<p>
+<p> Make a traffic light using an arduino
+<p> What went right: We did not give up and kept checking for mistakes, we ended up getting the arduino to work!
+<p> <img src="1.jpeg" width="300" /> Photo of the circuit
+<p> <img src="2.jpeg" width="300" /> Circuit photo 2
+<p> <img src="3.jpeg" width="300" /> Circuit photo 3
+<p>
+<p> Below is the program for the traffic light
+<p> 
+
+<p> // constants won't change. They're used here to set pin numbers:
+<p> const int buttonPin = 2;     // the number of the pushbutton pin
+<p> const int ledPin =  13;      // the number of the red LED pin
+<p> const int ledPinn =  12;      // the number of the yellow LED pin
+<p> const int ledPinnn =  11;      // the number of the green LED pin
+<p> 
+<p> // variables will change:
+<p> int buttonState = 0;         // variable for reading the pushbutton status
+<p> 
+<p> void setup() {
+ <p>  // initialize the LED pin as an output:
+ <p>  pinMode(ledPin, OUTPUT);
+ <p>  pinMode(ledPinn, OUTPUT);
+ <p>  pinMode(ledPinnn, OUTPUT);
+ <p>  pinMode(buttonPin, INPUT);
+<p> 
+ <p>  digitalWrite(ledPin, HIGH); // turn red on
+<p>   digitalWrite(ledPinn, LOW); // turn yel on
+<p>   digitalWrite(ledPinn, LOW); // turn gren on
+<p> }
+<p> 
+<p> void loop() {
+<p>   // read the state of the pushbutton value:
+<p>   buttonState = digitalRead(buttonPin);
+<p> 
+<p>   // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
+<p>   if (buttonState == HIGH) {
+<p>   delay(1000);                  // waits for a second
+<p>     digitalWrite(ledPin, LOW); // turn red off
+<p>         digitalWrite(ledPinn, HIGH); // turn yellow on
+<p>           delay(1000);                  // waits for a second
+<p>             digitalWrite(ledPinn, LOW);  //turn yellow off
+<p>               digitalWrite(ledPinnn, HIGH); // turn green on
+ <p>                 delay(1000);                  // waits for a second
+<p>                    digitalWrite(ledPinnn, LOW); // turn green off
+<p>                      digitalWrite(ledPin, HIGH);
+<p>   } else {
+ <p>    digitalWrite(ledPin, HIGH); // turn red on
+<p>   }
+<p> }
+
+<p> What problem we encountered: We had problem getting switch to work as we were unsure how to plug it in
+<p> <img src="trafficissue.jpeg" width="300" /> Here was what the switch is supposed to behind
+<p> We solved it by splitting the wire and got the traffic light working.
+<!-- Sign and date the page, it's only polite! -->
+<address>Made 4 September 2018<br>
+ </address>
+
+</body>
+</html>

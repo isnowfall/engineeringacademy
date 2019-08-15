@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+  <title>Journal</title>
+  <link rel="stylesheet" href="mystyle.css">
+<style type="text/css">
+  body {
+    padding-left: 11em;
+   font-family: Georgia, "Times New Roman",
+          Times, serif;
+    color: white;
+    background-color: black }
+  ul.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    width: 9em }
+  h1 {
+    font-family: Helvetica, Geneva, Arial,
+          SunSans-Regular, sans-serif }
+  ul.navbar li {
+    background: white;
+    margin: 0.5em 0;
+    padding: 0.3em;
+    border-right: 1em solid black }
+  ul.navbar a {
+    text-decoration: none }
+  a:link {
+    color: blue }
+  a:visited {
+    color: purple }
+  address {
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: thin dotted }
+  </style>
+</head>
+
+<body>
+
+<!-- Site navigation menu -->
+<ul class="navbar">
+  <li><a href="index.html">Home page</a>
+  <li><a href="journal.html">Blog</a>
+  <li><a href="team.html">Team</a>
+  <li><a href="review.html">Review</a>
+    <li><a href="research.html">Research</a>
+</ul>
+
+<!-- Main content -->
+<h1>EA Project</h1>
+<p><font size="6">Welcome to Journal!</font></p>
+
+
+<p>
+<p>
+-arduino not working when verify, “input void set up” not recognisable 
+-googled the solution to this problem
+<p>
+Day1- ice breaker activity
+(Bridge making) 
+<p>Our team had just met and was getting to know how each of us think and work, building the bridge was more of getting to know how to work with each other, rather than coming up with a super sturdy and strong bridge to win the mini competition
+
+<p>During the bridge making, we had a little bit of conflicting ideas and troubles understanding each other’s different ideas but finally, after sketching what we envision and proposed, we came up with a middle-ground solution that combines each of our individual ideas.
+<p> <img src="brokenstick.jpeg"  width="300" />
+<p>
+
+<p>Second activitity: arduino
+
+<p>Our group have a little bit of an advantage as most of us have experience in circuitry and arduino programming for this activity.
+<p> <img src="ard.jpeg"  width="300" />
+
+<p>The activity was to make and programme the LEDs in such a way that it replicates a traffic light, when a button is pushed
+
+<p>After several attepmts, we thought we were successful as the leds we lighting up, but we realise that it worked EVEN WITHOUT THE SWITCH being pressed. 
+<p>As it turns out, we had connected out 10K ohms resistor wrongly and the LED wrongly.  
+<p> <img src="wrong.jpeg"  width="300" />
+
+<p>The solution was to split the LED and resistor, connecting the resistor to the ground AND switch to the input pin
+
+<p>And our final product is a success!!!
+<p> <img src="12.jpeg"  width="300" />
+<p> <img src="11.jpeg"  width="300" />
+
+
+<p>Final activity of day 1, to deliver a message across a distance without crumpling the paper.
+
+<p>During our brain storm, the most probable idea was to build a paper airplane. That could cover both distance and accuracy. 
+<p>We build the design based off a design during childhood 
+<p>
+<p>We tried going 2 designs for distance and 1 for accuracy and only manage to conquer distance
+<p> <img src="21.jpeg"  width="300" />
+<p> <img src="22.jpeg"  width="300" />
+
+<p><font size="6">Day 2!</font></p>
+<p> We were designed circuit for auto paper plane throwing.
+<p> It took awhile as it was something new for all of us.
+<p> We had 2 DC Motors, element14 mm28 and one servo motor, fs90. 
+<p> We planned to make the servo do a 180 degrees sweep and DC motors to run for 5 seconds after pressing the button
+<p> We used laser cutter to make the parts for the device.
+<p> It was our first time using Autodesk for laser cutting.
+<p> There were many issues when laser cutting, the program at the laser cutter's computer could not open the file, as a result, only PDF could be read.
+<p> However, PDF strinks the drawing, as a result my group had to redraw using the laser cutter's computer as trying to enlarge the drawing, the holes we wanted to cut will not be in cut correctly.
+<p> We only finished laser cutting after an hour as we had to wait for other groups to finish.
+<p> We only had enough time left to do split work, Wen Da used hot glue to fix up the laser cut wood while Zi An did the programming for the Arduino.
+<p> When the day ended, we only finished the Tinkercad circuit design for the two motors, one switch and the laser cutted wood was assembed.
+<p>  This is the working circuit for tinkercad (below) 
+<p> <img src="tinkercad.jpeg"  width="300" />
+<p> We found out that there has to be at least some distance from the end of the piece when cutting a hole inside the piece
+<p> the piece was flimsy and will break under pressure.
+<p> We attached the motor to the wood piece
+<p> <img src="attach motor.jpeg"  width="300" />
+
+<p><font size="6">Day 3!</font></p>
+<p> We had to finish the product before 12pm today! We think that we will be able to make it in time.
+<p> After putting in the motor in the wood piece, the flimsy piece broke. 
+<p> We used ice cream sticks and hot glue to fix the broken piece. 
+<p> <img src="day31.jpeg"  width="300" />
+<p> The wood piece broke while trying to remove the motor.
+<p> The soldering for the motor was not good and had a short circuit, thus we had to remove the motor to resolder.
+<p> We have issues for moving the servo using button but after the lecturer helped us, we learned that we can move the servo by set amount of degrees after pressing the button.
+<p> We found out that we should use a power supply to power the circuit, we set the voltage to be 5volts and current to be 850 miliamps. 
+<p> We had an issue that the motor will not spin when button is pressed while the arduino was connected to the laptop, but with a little push the motor will spin. The amps had to be higher.
+<p> We designed our product to be able to aim directionally.
+<p> We put the servo at the bottom and had it move 10 degrees everytime the button was pressed till 180 degrees and when it reaches 180 degrees, it will reset to 0 degrees.
+<p> We had a little trouble when it was our turn for the presentation, the servo would not turn and the motors were not working.
+<p> We figured out the issue was that the laptop that was powering the servo was unplugged and the amps from the power supply was not high enough for the motor to turn.
+<p> We used 0.8 amps to spin the motor.
+<p> The best distance we had was our second try, 7m, the longest distance amongst everyone.
+<p> We were honored to win the longest distance award, we each got a $21 wireless mouse from the lecturers and are very thankful for it.
+<p>  <img src="day100.jpeg"  width="300" /> <img src="day101.jpeg"  width="300" />
+<p> Here is our device in operation!
+<p> <img src="gif.gif"  width="300" />
+<!-- Sign and date the page, it's only polite! -->
+<address>Made 4 September 2018<br>
+ </address>
+
+</body>
+</html>
